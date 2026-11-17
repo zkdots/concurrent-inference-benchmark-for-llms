@@ -23,8 +23,6 @@ cargo run --release -- --url http://localhost:11434 --model MODEL_NAME \
 - Failures retain their cause, count in the summary and produce a nonzero exit code. Bodies are limited to 16 MiB. CLI errors exit with code 2.
 - More connected clients do not guarantee more simultaneous GPU inference. Ollama scheduling, available memory, context size and server parallelism determine actual execution. This tool does not change your server configuration.
 
-The former `--targets`, `--demo`, `--beat` and `--refresh` options no longer apply. `--once` means one request per client, which is the default.
-
 API contract: https://docs.ollama.com/api/generate
 
 ## Verification
